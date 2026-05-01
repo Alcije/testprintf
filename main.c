@@ -21,9 +21,9 @@ int	main(void)
 
 	x = 42;
 	a = ft_printf("Fake: %c %s %p %d %i %u %x %X %%\n",
-			'A', "hello", &x, -42, 42, 3000000000u, 255, 255);
+			'A', "hello", &x, -42, 42, 0123456789u, 255, 255);
 	b = printf("Real: %c %s %p %d %i %u %x %X %%\n",
-			'A', "hello", &x, -42, 42, 3000000000u, 255, 255);
+			'A', "hello", &x, -42, 42, 0123456789u, 255, 255);
 	printf("Fake: %d\n", a);
 	printf("Real: %d\n", b);
 	return (0);
